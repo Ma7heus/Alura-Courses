@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+
+
+<script> 
+
+function texto(novo) {
+	document.write(novo);
+	document.write("<br><br>");
+}
+
+var contador = 0
+var loginCadastrado = "alura"
+var senhaCadastrada = "alura123"
+
+
+while (contador <= 3) {
+
+	var loginInformado = prompt("Informe o login de acesso: ");
+	var senhaInformada = prompt("Ïnforme a sua senha de login: ");
+
+		if (loginInformado == loginCadastrado && senhaInformada == senhaCadastrada) {
+			contador = contador + 5
+		} else { 
+			alert("Login ou senha incorretos."); //1
+			contador = contador + 1
+
+				if (contador == 1) {
+					alert("Voce possui mais 2 tentativas. Tente novamente."); //1
+				} else if (contador == 2) {
+					alert("Voce possui mais 1 tentativa. Tente novamente.");
+				} else if(contador == 3) {
+					alert(" Esta foi sua ultima tentativa, seu acesso foi negado!");
+					contador = contador + 1    //apenas para nao entrar novamente no "while"
+				}
+		}
+}
+
+if (contador >= 5) {
+		alert("Bem vindo a Alura!");
+}
+
+
+</script>

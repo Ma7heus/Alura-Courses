@@ -1,0 +1,26 @@
+<meta chaset="utf-8">
+
+<h1>Jogo adivinhe o numero!</h1>
+
+<script>
+function texto(novo) {
+	document.write(novo);
+	document.write("<br><br>");
+}
+
+var NumeroEscolhido = Math.round(Math.random()*100);
+
+var NumeroDigitado = parseInt(prompt("Digite abaixo o seu chute."));
+
+if (NumeroDigitado == NumeroEscolhido) {
+
+	texto("Parabens, voce acertou, o numero correto e " + NumeroDigitado);
+
+} 		else {texto("Voce errou, o numero pensado foi " + NumeroEscolhido + " e o numero digitado foi " + NumeroDigitado + ".");
+
+		}
+</script>
+
+
+
+

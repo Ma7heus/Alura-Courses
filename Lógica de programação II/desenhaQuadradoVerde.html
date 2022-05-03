@@ -1,0 +1,30 @@
+<canvas height="400" width="600"></canvas>
+<script>
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    function desenhaBorda(a,b,cor) {
+        pincel.fillStroke = 'black'
+        pincel.strokeRect(a,b,100,100)     
+
+    }
+
+    function desenhaQuadradoVerde(x,y,cor) {
+            
+        pincel.fillStyle = cor
+        pincel.fillRect(x,y,100,100)
+        desenhaBorda(x,y,100,100)
+        
+    }
+var cont = 0
+while (cont<600){
+    desenhaQuadradoVerde(cont,50,'green')
+    cont = cont + 100
+}
+
+for (var cont2 = 0;cont2<600;cont2 = cont2 +100) {
+    desenhaQuadradoVerde(cont2,200,'blue')
+}
+
+
+</script>

@@ -1,0 +1,40 @@
+<meta charset = "UTF-8">
+
+<input/>
+<button>Buscar smartphone</button>
+
+<script>
+var input = document.querySelector("input")
+input.focus()
+
+var smart = [1,2,3,4]
+
+// Aqui e a funcao que vou usar para procurar o numero do smart dentro da array "smart"
+
+function buscar(){
+	encontrou = false
+	for (var posicao = 0; posicao < smart.length; posicao++) {
+		if (input.value == smart[posicao]) {
+			alert("Smartphone encontrado. Numero da posicao " + posicao)
+			encontrou = true
+		}
+    }
+    if (encontrou == false){
+    	alert("Smartphone nao encontrado")
+    }
+ input.value = ""
+ input.focus()   
+}
+
+// aqui estou procurando o button dentro do HTML e atribuindo a funcao "buscar" a ele
+
+var button = document.querySelector("button")
+button.onclick = buscar
+
+
+</script>
+
+
+
+
+

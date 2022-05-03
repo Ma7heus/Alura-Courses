@@ -1,0 +1,59 @@
+<canvas width="600" height="600"></canvas>
+
+<script>
+
+    function desenhaRetangulo(x, y, largura, altura, cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle=cor;
+        pincel.fillRect(x,y, largura, altura);
+        pincel.strokeStyle='black';
+        pincel.strokeRect(x,y, largura, altura);
+    }
+
+    function desenhaTexto(x, y, texto) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.font='15px Georgia';
+        pincel.fillStyle='black';
+        pincel.fillText(texto, x, y);    
+    }
+
+    // aqui vem mais
+
+
+    desenhaRetangulo(50,50,100,50,'blue') 
+    desenhaRetangulo(50,100,100,25,'green')
+    desenhaRetangulo(50,125,100,20,'yellow')
+    desenhaRetangulo(50,145,100,5,'orange')
+
+    
+    desenhaTexto(50,200,"Legenda:")
+    desenhaRetangulo(50,225,50,50,'blue')
+    desenhaTexto(110,250,"Alunos que usam Google Chrome")
+
+    desenhaRetangulo(50,285,50,50,'green')
+    desenhaTexto(110,310,"Alunos que usam Firefox")   
+
+    desenhaRetangulo(50,345,50,50,'yellow')
+    desenhaTexto(110,370,"Alunos que usam Safari") 
+
+    desenhaRetangulo(50,405,50,50,'orange')
+    desenhaTexto(110,430,"Alunos que usam outros navegadores") 
+
+
+
+
+    for (cont = 0;cont < 5;cont++){
+
+        desenhaRetangulo()
+
+
+
+
+    }
+
+
+</script>

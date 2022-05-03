@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<br>
+<h1>Estou testando se consegui aprender algo util! Espero que sim.</h1>
+
+<script>
+function texto(novo) {
+	document.write(novo);
+	document.write("<br><br>");
+}
+
+function calculaImc(altura,peso) {
+	return (peso / (altura * altura));
+}
+
+var nome = prompt("Informe o seu nome");
+var pesoinformado = prompt("Informe qual o seu peso");
+var alturainformada = prompt("Informe a sua altura");
+
+var IMC = calculaImc(alturainformada,pesoinformado);
+
+texto(nome + ", o seu IMC é " + IMC);
+
+if(IMC < 18.5) {
+
+    texto("Você está abaixo do recomendado");
+
+}
+
+if(IMC > 35) {
+
+    texto("Você está acima do recomendado");
+}
+
+if(IMC >= 18.5 && IMC <= 35) {
+
+    texto("Seu IMC está excelente!");
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+

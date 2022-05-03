@@ -1,0 +1,29 @@
+<meta charset ="utf-8">
+
+<script>
+function texto(novo) {
+	document.write(novo);
+	document.write("<br><br>");
+}
+
+var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+
+var empates = parseInt(prompt("Entre com o número de empates."));
+
+var pontos = (vitorias * 3) + empates;
+
+texto("Os pontos do seu time são " + pontos);
+
+if (pontos == 28) {
+	texto("Seu time esta igual ao ano passado!");
+}
+if (pontos > 28){
+	texto("Seu time esta melhor que no ano passado!");
+}
+if (pontos < 28){
+	texto("Seu time esta pior que no ano passado!");
+}
+
+
+</script>
+
