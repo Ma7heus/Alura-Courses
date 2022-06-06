@@ -1,0 +1,19 @@
+.login {
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.login-form {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+.banner-login {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+}
+
+ 
