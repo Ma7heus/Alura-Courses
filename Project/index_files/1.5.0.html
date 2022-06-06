@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://newtabs.site/newtab -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>New Tab</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="serviceWorker" content="newtab-6e3efd83e32ffa6f9ba960a0a1abed64">
+	<link rel="stylesheet" href="./newtab-1.5.1.css">
+	<link rel="stylesheet" href="./material-components-web.min.css">
+	<script src="./manifest.js.download"></script>
+	<script src="./jquery-1.12.4.min.js.download"></script>
+	<script src="./jquery-ui.min.js.download"></script>
+	<script src="./newtab-1.5.2.1.js.download"></script>
+	<script src="./material-components-web.min.js.download"></script>
+</head>
+<body class="preload">
+	<iframe class="cls_sync" src="./1.html" style="display:none;position:absolute;left:-9999px;"></iframe>
+	<div id="wrapper">
+	<div class="new-tab" id="main">
+	<form target="_top" action="https://www.google.com/search" method="get" class="search-form" style="opacity: 0;">
+	<div class="search-box">
+	<input name="q" aria-hidden="true" autocomplete="off" type="text" placeholder="Enter your search term or URL">	  
+	<button class="search" type="submit">
+	<div>
+	<span>
+	<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+	</span>
+	</div>
+	</button>
+	</div>
+	</form>
+	<div class="tabs-box">
+	<div class="tabs ui-sortable">
+	</div>
+	</div>
+	</div>
+	<div class="menu transition">	
+	<button class="mdc-icon-button material-icons mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">menu</button>
+	</div>
+	</div>	
+<nav id="menu">
+<div class="inner">
+<div class="main-menu">
+	<h2>Settings</h2>
+	<div class="main-menu-iteam">
+	<div class="checkbox-search mdc-switch" data-mdc-auto-init="MDCSwitch" data-mdc-auto-init-state="initialized">
+	<div class="mdc-switch__track"></div>
+	<div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+    <div class="mdc-switch__thumb">
+	<input type="checkbox" id="checkbox-search" class="mdc-switch__native-control" role="switch">
+    </div>
+	</div>
+	</div>
+	<label for="checkbox-search">Show search panel</label>
+	</div>
+	<div class="main-menu-iteam">
+	<div class="checkbox-tabs mdc-switch" data-mdc-auto-init="MDCSwitch" data-mdc-auto-init-state="initialized">
+	<div class="mdc-switch__track"></div>
+	<div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+    <div class="mdc-switch__thumb">
+	<input type="checkbox" id="checkbox-tabs" class="mdc-switch__native-control" role="switch">
+    </div>
+	</div>
+	</div>
+	<label for="checkbox-tabs">Show shortcuts panel</label>
+	</div>
+	<div class="main-menu-iteam">
+	<div class="checkbox-news mdc-switch" data-mdc-auto-init="MDCSwitch" data-mdc-auto-init-state="initialized">
+	<div class="mdc-switch__track"></div>
+	<div class="mdc-switch__thumb-underlay mdc-ripple-upgraded mdc-ripple-upgraded--unbounded" style="--mdc-ripple-fg-size:0px; --mdc-ripple-fg-scale:NaN; --mdc-ripple-left:0px; --mdc-ripple-top:0px;">
+    <div class="mdc-switch__thumb">
+	<input type="checkbox" id="checkbox-news" class="mdc-switch__native-control" role="switch">
+    </div>
+	</div>
+	</div>
+	<label for="checkbox-news">Show news panel</label>
+	</div>
+	<div class="edit-bg-divider"></div>
+	<div class="main-menu-iteam t1">Change background images</div>
+	<div class="main-menu-iteam">
+	<label class="theme"><a target="_blank" href="javascript:void(0);"><button class="mdc-button mdc-button--raised t2 mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Choose another theme</button></a></label>
+	<label class="open-gallery"><button class="mdc-button mdc-button--raised t10 mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Choose background images</button></label>
+	</div>
+	<div class="edit-bg-divider"></div>
+	<div class="main-menu-iteam"><span class="t3">Support the project</span><span class="rate">Rate this extension</span></div>
+	<div class="main-menu-iteam">
+	<div class="edit-bg-divider-y"></div>
+	<label><a class="donate" href="javascript:void(0);"><button class="mdc-button mdc-button--raised t4 mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Donate</button></a></label>
+	<label class="star_rate"><a href="javascript:void(0);"><span class="material-icons" data-star-rate="5">star_rate</span><span class="material-icons" data-star-rate="4">star_rate</span><span class="material-icons" data-star-rate="3">star_rate</span><span class="material-icons" data-star-rate="2">star_rate</span><span class="material-icons" data-star-rate="1">star_rate</span></a></label>
+	</div>
+	<div class="edit-bg-divider"></div>
+	<div class="main-menu-iteam support_privacy_agreement"><a target="_blank" rel="nofollow" href="mailto:mail@newtab.icu">Contact the support</a><a target="_blank" href="https://newtabs.site/privacy">Privacy policy</a><a target="_blank" href="https://newtabs.site/agreement">User agreement</a></div>	
+</div>
+<div class="gallery">
+	<h2>Choose background images</h2>
+	<i class="material-icons back">arrow_back</i>
+	<div class="cards"></div>
+</div>
+<div class="tabs-menu">
+	<h2>Edit shortcut</h2>
+	<div class="tabs-box-name mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField" data-mdc-auto-init-state="initialized">
+	<input class="mdc-text-field__input" id="text-field-hero-input">
+	<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+	<div class="mdc-notched-outline__leading"></div>
+	<div class="mdc-notched-outline__notch">
+	<label for="text-field-hero-input" class="mdc-floating-label t7" style="">Name</label>
+	</div>
+	<div class="mdc-notched-outline__trailing"></div>
+	</div>
+	</div>
+	<div class="tabs-box-url mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField" data-mdc-auto-init-state="initialized">
+	<input class="mdc-text-field__input" id="text-field-hero-input">
+	<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+	<div class="mdc-notched-outline__leading"></div>
+	<div class="mdc-notched-outline__notch">
+	<label for="text-field-hero-input" class="mdc-floating-label t8" style="">URL</label>
+	</div>
+	<div class="mdc-notched-outline__trailing"></div>
+	</div>
+	</div>
+	<div class="buttons">
+	<span>
+	<button class="delete mdc-button mdc-button--raised mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Delete</button>
+	</span>
+	<span>
+	<button class="cancel mdc-button mdc-button--raised mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Cancel</button>
+	<button class="save mdc-button mdc-button--raised mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Save</button>
+	</span>
+	</div>
+</div>
+<div class="extensions">
+	<h1>Thank you for choosing our extension!</h1>
+	<h2>To install the extension, click «Keep it»</h2>
+	<div class="installed"><img></div>
+	<h3>If you do not click «Keep it», the extension will be disabled</h3>
+	<div class="pointer"><div class="pointer-inside"></div></div>
+	<button class="make-installed mdc-button mdc-button--raised mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" data-mdc-auto-init-state="initialized">Done</button>
+</div>
+<i class="material-icons close">close</i>
+</div>
+</nav>
+<div class="news"></div>
+<div id="focus"></div>
+<script src="./rtnws.js.download"></script>
+
+<script>
+var sw;
+if('serviceWorker' in navigator) {
+try {
+	navigator.serviceWorker.register('/newtab.icu.sw.js', {
+		scope: '/'
+	}).then((r) => {
+		if(r.installing){
+		sw=r;
+		var data={
+			type: 'CACHE_URLS',
+			payload: [...new Set([location.href,...performance.getEntriesByType('resource').map((r) => r.name)])]
+		};
+		r.installing.postMessage(data);
+		};
+	}).catch((err) => console.log(err));
+} catch (e) {};
+};
+</script>
+<iframe src="./amaranth_pink_erbium.html" style="display:none;position:absolute;left:-9999px;"></iframe><aside class="mdc-snackbar mdc-snackbar--open"><div class="mdc-snackbar__surface" role="status" aria-relevant="additions" style="background-color:#fff;"><div class="mdc-snackbar__label" aria-atomic="false" style="color:#414f57;">Dear user, you also have a huge selection of other themes for every taste in our gallery in the menu</div><div class="mdc-snackbar__actions" aria-atomic="true"><button type="button" class="mdc-button mdc-button--raised snackbar_action">Choose another theme</button><button class="mdc-icon-button mdc-snackbar__dismiss material-icons" title="Dismiss" style="color:#414f57;">close</button></div></div></aside></body></html>
