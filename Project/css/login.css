@@ -1,19 +1,52 @@
-.login {
+.telaLogin {
+    flex-direction: row;
     height: 100%;
-    display: flex;
-    flex-direction:row;
+    display: flex;    
+    width: 100%; 
 }
 
-.login-form {
-    width: 50%;
+
+.formulario {
+    width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: rgb(20, 91, 197);
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 100px;
+    
 }
 
-.banner-login {
-    width: 50%;
-    height: 100%;
-    background-color: green;
+.titulo {
+    text-align: center;
+    flex-direction: column-reverse;
 }
-
  
+.emailLogin {
+    width: 100%;
+    padding: 5px;
+    
+        
+    
+    
+}    
+.senhaLogin { 
+    width: 100%;
+    padding-top: 5px;
+  
+    
+}
+
+
+.botaoLogin{
+
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-block-end: 10px;
+
+
+}
+
+
