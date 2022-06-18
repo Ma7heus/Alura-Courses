@@ -8,7 +8,7 @@ class Cliente {
 // ADICONAR UMA HASHTAG (#) ANTES DA VARIAVEL TORNA ELA PRIVADA, APENAS A CLASSE DELA PODE MEXER NO VALOR DA VARIAVEL.
 class contaCorrente {
     agencia
-    #saldo
+    #saldo = 0
 
     // sacar nada mais edo que o metodo do objeto contaCorrenteMatheus
 
