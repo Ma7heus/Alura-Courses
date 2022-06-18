@@ -1,11 +1,12 @@
-// Criando classes de clientes para Byte bank.
+// Criando classes de clientes para Byte Bank.
 
 class Cliente {
     nome
     cpf
 }
 
-class contaCorente {
+// ADICONAR UMA HASHTAG (#) ANTES DA VARIAVEL TORNA ELA PRIVADA, APENAS A CLASSE DELA PODE MEXER NO VALOR DA VARIAVEL.
+class contaCorrente {
     agencia
     saldo
 
@@ -21,6 +22,12 @@ class contaCorente {
         }
     }
 
+    depositar(valor) {
+        if (valor >0) {
+            this.saldo += valor
+        }
+    }
+
 }
 
 // obejto com dados do cliente
@@ -29,12 +36,12 @@ cliente1.nome = "Matheus"
 cliente1.cpf = 12156879536
 
 // objeto com dados da conta do cliente
-const contaCorenteMatheus = new contaCorente()
+const contaCorenteMatheus = new contaCorrente()
 contaCorenteMatheus.agencia = 1001
 contaCorenteMatheus.saldo = 0
 
 //Fazendo deposito na conta
-contaCorenteMatheus.saldo = 100
+contaCorenteMatheus.depositar(100)
 
 //Realizando saque
 contaCorenteMatheus.sacar(50)
