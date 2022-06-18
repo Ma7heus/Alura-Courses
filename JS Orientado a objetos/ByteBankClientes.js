@@ -9,7 +9,7 @@ class contaCorente {
     agencia
     saldo
 
-    // sacar nada mais edo que o metodo do objeto 
+    // sacar nada mais edo que o metodo do objeto contaCorrenteMatheus
 
     sacar(valor){
         if (this.saldo>valor) {
@@ -37,7 +37,7 @@ contaCorenteMatheus.saldo = 0
 contaCorenteMatheus.saldo = 100
 
 //Realizando saque
-let valor = 50
+contaCorenteMatheus.sacar(50)
 
 
 
