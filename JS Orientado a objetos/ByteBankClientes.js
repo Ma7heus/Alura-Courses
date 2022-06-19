@@ -15,8 +15,6 @@ class contaCorrente {
     sacar(valor){
         if (this.#saldo>valor) {
             this.#saldo -= valor
-            console.log(`Novo saldo em conta: R$ ${this.#saldo}`)
-            console.log(`Valor do saque: R$ ${valor}.`)
         }else {
             console.log(`Voce nao possui saldo em conta o valor solicitado!\n Saldo em conta: R$ ${this.#saldo}`)
         }
@@ -44,16 +42,4 @@ contaCorenteMatheus.depositar(100)
 
 //Realizando saque
 contaCorenteMatheus.sacar(50)
-
-
-
-
-console.log(cliente1)
-
-
-
-
-
-
-
 
