@@ -1,5 +1,5 @@
-//import {Cliente} from "Cliente.js"
-import {contaCorrente} from "contaCorrente.js"
+import {Cliente} from "./Cliente.js"
+import {contaCorrente} from "./contaCorrente.js"
 
 // obejto com dados do cliente
 const cliente1 = new Cliente()
@@ -11,8 +11,10 @@ const contaCorenteMatheus = new contaCorrente()
 contaCorenteMatheus.agencia = 1001
 
 //Fazendo deposito na conta
-contaCorenteMatheus.depositar(100)
+contaCorenteMatheus.depositar(1000)
 
 //Realizando saque
 contaCorenteMatheus.sacar(50)
 
+//mostrar saldo do cleinte em conta
+contaCorenteMatheus.mostraSaldo()

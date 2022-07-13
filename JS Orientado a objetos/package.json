@@ -2,7 +2,7 @@
   "name": "bytebank",
   "version": "1.0.0",
   "description": "Projeto bytebank do curso de JS orietado a Objetos",
-  "main": "ByteBankClientes.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
