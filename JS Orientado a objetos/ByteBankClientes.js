@@ -1,3 +1,5 @@
+//import {Cliente} from "Cliente.js"
+import {contaCorrente} from "contaCorrente.js"
 
 // obejto com dados do cliente
 const cliente1 = new Cliente()
