@@ -1,14 +1,18 @@
 export class contaCorrente {
     agencia
+    Cliente
+
+    //separando os atributoS publicos dos privados
     _saldo = 0
 
-    // sacar nada mais edo que o metodo do objeto contaCorrenteMatheus
+    // sacar nada mais e do que o metodo do objeto contaCorrenteMatheus
 
     sacar(valor){
-        if (this._saldo>valor) {
+        if (this._saldo>=valor) {
             this._saldo -= valor
+            return valor
         }else {
-            console.log(`Voce nao possui saldo em conta o valor solicitado!\n Saldo em conta: R$ ${this._saldo}`)
+            console.log(`Voce nao possui o valor solicitado!\n Saldo em conta: R$ ${this._saldo}`)
         }
     }
 
@@ -20,8 +24,22 @@ export class contaCorrente {
 
     depositar(valor) {
         if (valor >0) {
-            this._saldo += valor
+            this._saldo  += valor
         }
     }
+
+    // transferindo valores entre contas
+    tranferir(valor, conta) {
+        const valorSacado = this.sacar(valor)
+        conta.depositar(valorSacado)
+          
+        
+
+
+
+
+
+    }
+
 
 }
