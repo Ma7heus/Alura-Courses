@@ -1,20 +1,28 @@
 import {Cliente} from "./Cliente.js"
 import {contaCorrente} from "./contaCorrente.js"
 
-// obejto com dados do cliente
+// objetos com dados do cliente
 const cliente1 = new Cliente()
 cliente1.nome = "Matheus"
 cliente1.cpf = 12156879536
 
+const cliente2 = new Cliente()
+cliente2.nome = "Amanda"
+cliente2.cpf = 1316541651684
+
 // objeto com dados da conta do cliente
 const contaCorenteMatheus = new contaCorrente()
 contaCorenteMatheus.agencia = 1001
+contaCorenteMatheus.Cliente = cliente1
 
-//Fazendo deposito na conta
-contaCorenteMatheus.depositar(1000)
+const contaCorenteAmanda = new contaCorrente()
+contaCorenteAmanda.agencia = 1002
+contaCorenteAmanda.Cliente = cliente2
 
-//Realizando saque
-contaCorenteMatheus.sacar(50)
+contaCorenteMatheus.depositar(100)
+console.log(contaCorenteMatheus)
 
-//mostrar saldo do cleinte em conta
-contaCorenteMatheus.mostraSaldo()
+contaCorenteMatheus.tranferir(1000,contaCorenteAmanda)
+console.log(contaCorenteMatheus)
+console.log(contaCorenteAmanda)
+
