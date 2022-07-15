@@ -13,16 +13,15 @@ cliente2.cpf = 1316541651684
 // objeto com dados da conta do cliente
 const contaCorenteMatheus = new contaCorrente()
 contaCorenteMatheus.agencia = 1001
-contaCorenteMatheus.Cliente = cliente1
+contaCorenteMatheus.cliente = cliente1
 
 const contaCorenteAmanda = new contaCorrente()
 contaCorenteAmanda.agencia = 1002
-contaCorenteAmanda.Cliente = cliente2
+contaCorenteAmanda.cliente = cliente2
 
-contaCorenteMatheus.depositar(100)
-console.log(contaCorenteMatheus)
+const conta2 = new contaCorrente()
+conta2.cliente = cliente1
+conta2.agencia = 102
 
-contaCorenteMatheus.tranferir(1000,contaCorenteAmanda)
-console.log(contaCorenteMatheus)
-console.log(contaCorenteAmanda)
-
+conta2.saldo = 3000
+console.log(conta2.saldo)
