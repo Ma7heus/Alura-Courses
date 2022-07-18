@@ -1,7 +1,24 @@
 // clase de clientes do Byte bank
 
 export class Cliente {
-    nome
-    cpf
+    _nome
+    _cpf
+
+    // usamos contrutores quando queremos criar um objeto e nao queremos permitir que os valores dos 
+    // estados seja alterados.
+
+    constructor (nome,cpf) {
+        this.nome = nome
+        this._cpf = cpf
+    }
+    
+    get cpf() {
+        this._cpf
+    }
+    
+    get nome(){
+        this.nome
+    }
 }
+
 
