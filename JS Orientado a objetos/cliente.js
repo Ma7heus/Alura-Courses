@@ -8,16 +8,16 @@ export class Cliente {
     // estados seja alterados.
 
     constructor (nome,cpf) {
-        this.nome = nome
+        this._nome = nome
         this._cpf = cpf
     }
     
     get cpf() {
-        this._cpf
+        return this._cpf
     }
     
     get nome(){
-        this.nome
+       return this._nome
     }
 }
 

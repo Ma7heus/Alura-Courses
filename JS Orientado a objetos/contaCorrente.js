@@ -1,12 +1,13 @@
 import { Cliente } from "./Cliente.js";
 export class contaCorrente {
+    static numeroContaCorrente = 0 
     agencia
     _Cliente
 
     //separando os atributoS publicos dos privados
     _saldo = 0
 
-    // Ao inves de usarmosum metodo para pegar e atribuir cliente,
+    // Ao inves de usarmos um metodo para pegar e atribuir cliente,
     // vamos estar usando os "metodos acessores", ou tmabem, "getters and setters".
     set cliente(novoValor) {
         if (novoValor instanceof Cliente){
@@ -21,6 +22,15 @@ export class contaCorrente {
     get saldo() {
         return this._saldo
     }
+
+    // usando construtor para os estados da classe
+
+    constructor(agencia,cliente){
+        this.agencia = agencia
+        this._Cliente = cliente
+        contaCorrente.numeroContaCorrente += 1
+    }
+
 
     // sacar nada mais e do que o metodo do objeto contaCorrenteMatheus
 
