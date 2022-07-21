@@ -1,41 +1,51 @@
 
-class smartphone{
-    modelo
-    imei
-    mac
-    situacao
+export class smartphone {
+    static _idSmartphone
+    static _chapa 
+    _modelo
+    _imei
+    _mac
+    _situacao
 
-    emUso(){
-        
+    get chapa(){
+        return this._chapa
     }
 
-    disponiveis(){
+    get idSmartphone(){
+        return this._idSmartphone
+    }
+
+    constructor (idSmartphone,chapa){
 
     }
 
-    pendetes(){
+    //Adicionando metodos da classe
+
+
+    mudarSituacao(novoValor){
+        this._situacao = novoValor
 
     }
 
-    baixados(){
 
-    }
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-class usuario{
-    nome
-    matricula
-    email
-    senhaEmail
 
-}
-
-const smartphone1 = new smartphone
-
-smartphone1.modelo = "GALAXY A50"
-
-
-console.log(smartphone1)
 
